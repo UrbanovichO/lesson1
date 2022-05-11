@@ -1,5 +1,4 @@
 
-
 # class Computer:
 #     def __init__(self,model,*args,**kwargs):
 #         super().__init__(*args, **kwargs)
