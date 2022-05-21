@@ -1,5 +1,4 @@
 result = []
-kem = str(150)
 def divider(a, b):
     if a < b:
         raise ValueError
@@ -7,7 +6,9 @@ def divider(a, b):
         raise IndexError
     return a/b
 data = {10: 2, 2: 5, "123": 4, 18: 0, tuple([]): 15, 8 : 4}
+print(data)
+kem = {}
 for key in data:
-    res = divider(key, data[kem])
+    res = divider(key, data[tuple(kem)])
     result.append(res)
 print(result)
