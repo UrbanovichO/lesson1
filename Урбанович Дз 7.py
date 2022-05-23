@@ -5,10 +5,18 @@ def divider(a, b):
     if b > 100:
         raise IndexError
     return a/b
-data = {10: 2, 2: 5, "123": 4, 18: 0, tuple([]): 15, 8 : 4}
-print(data)
-kem = {}
+
+#data = {10: 2, 2: 5, "123": 4, 18: 0, []: 15, 8 : 4}
+data = {10: 2, 2: 5, "123": 4, 18: 0 , 8 : 4}
+data["0"] = 15
 for key in data:
-    res = divider(key, data[tuple(kem)])
-    result.append(res)
+    try:
+        res = divider(key, data[key])
+        result.append(res)
+    except TypeError:
+        print("TypeError")
+    except ValueError:
+        ValueError("ValueError")
+    except ZeroDivisionError:
+        ZeroDivisionError("ZeroDivisionError")
 print(result)
