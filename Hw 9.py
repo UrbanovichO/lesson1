@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.DEBUG, filename="logs.log",filemode="w",format
 a1 = random.randint(1,10)
 r =range(0,10)
 it = iter(r)
-l = [a1+5*(next(it))/random.randint(-5, 5) for i in r]
+l = [a1+5*(next(it)) / random.randint(-5, 5) for i in r]
 it = iter(l)
 try:
     print(l)
