@@ -16,7 +16,11 @@
 # P = (a*2)+(b*2)
 # print(P)
 # Problem 4
-x = int(input("Input number:"))
-y = int(input("Input number:"))
-difference = x-y
-print(difference)
+# x = int(input("Input number:"))
+# y = int(input("Input number:"))
+# difference = x-y
+# print(difference)
+# Problem 5
+N = float(input("Input number:"))
+a = int(N)*2
+print(a)
